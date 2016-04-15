@@ -1,0 +1,186 @@
+<template name="home">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 50px;
+        height: 1000px       /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+
+    <title>Bare - Start Bootstrap Template</title>
+</head>
+
+<body style="background-image: url('/backgrounds/mainbg.jpg')">
+
+{{> navbar }}
+
+
+<div class="container" style="background-color: white; text-align: center; height: 100%">
+
+    <form class="form-horizontal">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend class="text-muted">Welcome, Ivaylo</legend>
+
+            <!-- Multiple Radios -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="emo-state">What is your emotional state right now?</label>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label for="emo-state-0">
+                            <input name="emo-state" id="emo-state-0" value="1" checked="checked" type="radio">
+                            Relaxed, Patient
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="emo-state-1">
+                            <input name="emo-state" id="emo-state-1" value="2" type="radio">
+                            Agitated
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="emo-state-2">
+                            <input name="emo-state" id="emo-state-2" value="3" type="radio">
+                            Overwhelmed
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multiple Radios (inline) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="headphones">Are you going to be using headphones?</label>
+                <div class="col-md-4">
+                    <label class="radio-inline" for="headphones-0">
+                        <input name="headphones" id="headphones-0" value="yes" checked="checked" type="radio">
+                        Yes
+                    </label>
+                    <label class="radio-inline" for="headphones-1">
+                        <input name="headphones" id="headphones-1" value="no" type="radio">
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <!-- Multiple Radios -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="time-available">How much time do you have?</label>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label for="time-available-0">
+                            <input name="time-available" id="time-available-0" value="1" checked="checked" type="radio">
+                            As much as 10 minutes
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="time-available-1">
+                            <input name="time-available" id="time-available-1" value="2" type="radio">
+                            Under 30 minutes
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="time-available-2">
+                            <input name="time-available" id="time-available-2" value="3" type="radio">
+                            Under 60 minutes
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="time-available-3">
+                            <input name="time-available" id="time-available-3" value="4" type="radio">
+                            As long as it takes
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multiple Radios -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="trance-states">Do you enter trance states easily? (through hypnosis)</label>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label for="trance-states-0">
+                            <input name="trance-states" id="trance-states-0" value="1" checked="checked" type="radio">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="trance-states-1">
+                            <input name="trance-states" id="trance-states-1" value="2" type="radio">
+                            No
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="trance-states-2">
+                            <input name="trance-states" id="trance-states-2" value="3" type="radio">
+                            I have never used hypnosis
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multiple Radios (inline) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="bwe-experienced">Are you experienced with brainwave entrainment?</label>
+                <div class="col-md-4">
+                    <label class="radio-inline" for="bwe-experienced-0">
+                        <input name="bwe-experienced" id="bwe-experienced-0" value="yes" checked="checked" type="radio">
+                        Yes
+                    </label>
+                    <label class="radio-inline" for="bwe-experienced-1">
+                        <input name="bwe-experienced" id="bwe-experienced-1" value="no" type="radio">
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="singlebutton"></label>
+                <div class="col-md-4">
+                    <button id="recommendButton" name="singlebutton" class="btn btn-primary">Recommend!</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+
+</div>
+    <!-- Page Content
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>A Bootstrap Starter Template</h1>
+                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
+                <ul class="list-unstyled">
+                    <li>Bootstrap v3.3.6</li>
+                    <li>jQuery v1.11.1</li>
+                </ul>
+            </div>
+        </div>
+       
+
+    </div>
+  -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</template>
